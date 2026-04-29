@@ -43,7 +43,8 @@ export default function Contact() {
             <a
               key={link.label}
               href={link.href}
-              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               className="flex items-center gap-2 font-dm text-sm text-accent hover:text-accent-hover transition-colors"
             >
               <link.icon size={18} />
