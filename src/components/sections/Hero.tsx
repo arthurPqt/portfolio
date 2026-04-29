@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-20">
+    <section className="min-h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 pt-20 text-center">
 
       {/* Badge disponible */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex items-center gap-2 mb-6"
+        className="flex items-center justify-center gap-2 mb-6"
       >
         <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
         <span className="font-mono text-xs tracking-widest text-accent uppercase">
@@ -47,7 +47,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        className="font-dm text-base text-grey max-w-md mb-10 leading-relaxed"
+        className="font-dm text-base text-grey max-w-md mx-auto mb-10 leading-relaxed"
       >
         Passionné par le web, je conçois des interfaces modernes et des
         back-ends robustes. Disponible pour de nouvelles opportunités.
@@ -58,7 +58,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="flex flex-col sm:flex-row gap-4"
+        className="flex flex-col sm:flex-row justify-center gap-4"
       >
         <Link
           href="#projects"
@@ -81,7 +81,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="flex flex-wrap gap-x-6 gap-y-2 mt-16 pt-8 border-t border-grey-border"
+        className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-16 pt-8 border-t border-grey-border"
       >
         {["Next.js", "React", "Tailwind CSS", "PHP", "MySQL", "TypeScript"].map((tech) => (
           <span key={tech} className="font-mono text-xs text-grey-light">
