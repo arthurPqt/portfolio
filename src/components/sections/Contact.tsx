@@ -26,7 +26,7 @@ const socialLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section id="contact" className="py-32 px-6 sm:px-12 md:px-16 lg:px-24">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -6,7 +6,7 @@ import { projects } from "@/data/projects";
 
 export default function Projets() {
   return (
-    <section id="projects" className="py-20 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section id="projects" className="py-32 px-6 sm:px-12 md:px-16 lg:px-24">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
