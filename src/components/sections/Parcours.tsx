@@ -29,7 +29,7 @@ const experiences: ExperienceItem[] = [
 export default function Parcours() {
     return (
         <section className="py-16 px-4 bg-white">
-            <div className="max-w-4xl mx-auto">
+            <div className="min-h-auto flex flex-col items-center justify-center px-6 sm:px-12 md:px-16 lg:px-24 pt-20 text-center">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <p className="text-teal-600 text-sm font-semibold tracking-wide mb-2">03. PARCOURS</p>

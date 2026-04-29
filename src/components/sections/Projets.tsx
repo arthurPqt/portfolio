@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import { Projects } from "@/data/projects";
 interface Project {
   id: string;
   title: string;
@@ -45,8 +45,8 @@ const projects: Project[] = [
 
 export default function Projets() {
   return (
-    <section className="py-0 md:py-20 px-6 pt-50 sm:px-12 md:px-16 lg:px-24">
-      <div className="py-0 md:py-20 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section className="py-0 md:py-20 px-6 sm:px-12 md:px-16 lg:px-24">
+      <div className="min-h-auto flex flex-col items-center justify-center px-6 mt-10 sm:px-12 md:px-16 lg:px-24 pt-20 text-center">
         <div className="text-center mb-12">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
