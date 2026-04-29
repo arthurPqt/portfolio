@@ -59,7 +59,7 @@ export default function Hero() {
       >
         <Link
           href="#projects"
-          className="font-dm font-medium text-sm text-white bg-accent hover:bg-accent-hover transition-colors px-6 py-3 rounded-md text-center"
+          className="font-dm font-medium text-sm text-white bg-accent hover:bg-accent-hover transition-colors px-8 py-3.5 rounded-md text-center"
         >
           Voir mes projets →
         </Link>
@@ -67,7 +67,7 @@ export default function Hero() {
           href="/cv-arthur-picquot.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-dm font-medium text-sm text-accent border border-accent hover:bg-accent-light transition-colors px-6 py-3 rounded-md text-center"
+          className="font-dm font-medium text-sm text-accent border border-accent hover:bg-accent-light transition-colors px-8 py-3.5 rounded-md text-center"
         >
           Mon CV ↓
         </a>
