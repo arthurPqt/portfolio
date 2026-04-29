@@ -1,44 +1,19 @@
 @import "tailwindcss";
 
-/* ── Fonts ── */
-@theme inline {
+@theme {
+  --color-accent:        #15803D;
+  --color-accent-hover:  #166534;
+  --color-accent-light:  #DCFCE7;
+  --color-accent-text:   #14532D;
+  --color-dark:          #1E293B;
+  --color-dark-deep:     #0F172A;
+  --color-grey:          #64748B;
+  --color-grey-light:    #94A3B8;
+  --color-grey-border:   #E2E8F0;
+
   --font-syne:      var(--font-syne);
   --font-dm:        var(--font-dm-sans);
   --font-mono:      var(--font-jetbrains);
-}
-
-/* ── Palette ── */
-:root {
-  --accent:         #15803D;
-  --accent-hover:   #166534;
-  --accent-light:   #DCFCE7;
-  --accent-text:    #14532D;
-
-  --dark:           #1E293B;
-  --dark-deep:      #0F172A;
-
-  --grey:           #64748B;
-  --grey-light:     #94A3B8;
-  --grey-border:    #E2E8F0;
-
-  --background:     #FFFFFF;
-  --foreground:     #1E293B;
-}
-
-/* ── Base ── */
-body {
-  background: var(--background);
-  color:      var(--foreground);
-  font-family: var(--font-dm), DM Sans, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-syne), Syne, sans-serif;
-}
-
-code, pre {
-  font-family: var(--font-mono), JetBrains Mono, monospace;
 }
 
 * {
@@ -49,4 +24,10 @@ code, pre {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
 }
