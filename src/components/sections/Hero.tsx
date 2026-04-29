@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-8 md:px-16 lg:px-24 pt-20 text-center">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 md:px-16 lg:px-24 pt-20 text-center">
 
       {/* Badge disponible */}
       <motion.div
@@ -27,9 +27,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="font-syne font-extrabold text-6xl md:text-8xl text-dark leading-none tracking-tight mb-4"
       >
-        Arthur
-        <br />
-        <span className="text-accent">Picquot.</span>
+        Arthur Picquot.
       </motion.h1>
 
       {/* Sous-titre */}
@@ -39,7 +37,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="font-syne font-semibold text-2xl md:text-3xl text-dark/50 mb-6"
       >
-        Développeur Full-Stack
+        Développeur <span className="text-accent">Full-Stack</span>
       </motion.p>
 
       {/* Accroche */}
