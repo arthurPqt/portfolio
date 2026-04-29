@@ -65,6 +65,8 @@ export default function Projets() {
               {project.githubUrl && (
                 <Link
                   href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-dm font-medium text-sm text-white bg-accent hover:bg-accent-hover transition-colors px-4 py-2 rounded-md"
                 >
                   GitHub →
