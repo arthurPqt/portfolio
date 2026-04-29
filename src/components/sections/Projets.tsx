@@ -6,7 +6,7 @@ import { projects } from "@/data/projects";
 
 export default function Projets() {
   return (
-    <section id="projects" className="py-32 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section id="projects" className="py-24 px-6 sm:px-12 md:px-16 lg:px-24">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function Projets() {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-dm font-medium text-sm text-white bg-accent hover:bg-accent-hover transition-colors px-4 py-2 rounded-md"
+                  className="font-dm font-medium text-sm text-white bg-accent hover:bg-accent-hover transition-colors px-6 py-2.5 rounded-md"
                 >
                   GitHub →
                 </Link>
@@ -110,17 +110,17 @@ export default function Projets() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-dm font-medium text-sm text-accent-text bg-accent-light hover:bg-accent-light/80 transition-colors px-4 py-2 rounded-md"
+                  className="font-dm font-medium text-sm text-accent-text bg-accent-light hover:bg-accent-light/80 transition-colors px-6 py-2.5 rounded-md"
                 >
                   Voir le site →
                 </Link>
               )}
               {project.status === "wip" && (
                 <>
-                  <span className="font-dm text-sm text-accent-text bg-accent-light px-4 py-2 rounded-md">
+                  <span className="font-dm text-sm text-accent-text bg-accent-light px-6 py-2.5 rounded-md">
                     Bientôt disponible
                   </span>
-                  <span className="font-dm text-sm text-white bg-grey-light px-4 py-2 rounded-md">
+                  <span className="font-dm text-sm text-white bg-grey-light px-6 py-2.5 rounded-md">
                     En cours
                   </span>
                 </>

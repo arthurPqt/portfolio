@@ -54,7 +54,7 @@ export default function Navbar() {
             href="/cv-arthur-picquot.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-dm text-sm font-medium text-white bg-accent hover:bg-accent-hover transition-colors px-4 py-2 rounded-md"
+            className="font-dm text-sm font-medium text-white bg-accent hover:bg-accent-hover transition-colors px-5 py-2.5 rounded-md"
           >
             Mon CV
           </a>
@@ -87,7 +87,7 @@ export default function Navbar() {
             href="/cv-arthur-picquot.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-dm text-sm font-medium text-white bg-accent hover:bg-accent-hover transition-colors px-4 py-3 rounded-md text-center mt-2"
+            className="font-dm text-sm font-medium text-white bg-accent hover:bg-accent-hover transition-colors px-6 py-3 rounded-md text-center mt-2"
           >
             Mon CV
           </a>

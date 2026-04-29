@@ -31,7 +31,7 @@ const experiences: ExperienceItem[] = [
 
 export default function Parcours() {
   return (
-    <section id="about" className="py-32 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section id="about" className="py-24 px-6 sm:px-12 md:px-16 lg:px-24">
       <div className="max-w-4xl mx-auto">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -107,7 +107,7 @@ export default function Parcours() {
             href="/cv-arthur-picquot.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-dm font-medium text-sm text-white bg-accent hover:bg-accent-hover transition-colors px-6 py-3 rounded-md"
+            className="font-dm font-medium text-sm text-white bg-accent hover:bg-accent-hover transition-colors px-8 py-3.5 rounded-md"
           >
             Mon CV →
           </a>
