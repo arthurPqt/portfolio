@@ -5,6 +5,9 @@
   --font-syne:      var(--font-syne);
   --font-dm:        var(--font-dm-sans);
   --font-mono:      var(--font-jetbrains);
+
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
 }
 
 /* ── Palette ── */
