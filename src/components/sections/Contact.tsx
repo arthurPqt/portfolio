@@ -38,16 +38,18 @@ export default function Contact() {
           Retrouvez-moi sur
         </p>
 
-        <div className="flex justify-center gap-8">
+        <div className="flex flex-col items-center gap-4">
           {socialLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target={link.external ? "_blank" : undefined}
               rel={link.external ? "noopener noreferrer" : undefined}
-              className="flex items-center gap-2 font-dm text-sm text-accent hover:text-accent-hover transition-colors"
+              className="flex items-center gap-3 font-dm text-sm text-accent hover:text-accent-hover transition-colors"
             >
-              <link.icon size={18} />
+              <span className="w-8 h-8 rounded-full bg-accent-light flex items-center justify-center">
+                <link.icon size={16} className="text-accent" />
+              </span>
               <span>{link.label}</span>
             </a>
           ))}

@@ -39,8 +39,41 @@ export default function Projets() {
             key={project.id}
             className="bg-grey-border/30 rounded-lg p-6 flex flex-col"
           >
-            <div className="bg-grey-border/50 h-32 rounded-md mb-6 flex items-center justify-center">
-              <span className="text-4xl text-grey-light">📦</span>
+            <div className="bg-grey-border/50 h-32 rounded-md mb-6 flex items-center justify-center relative overflow-hidden">
+              <div className="absolute inset-0 flex items-center justify-center">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  className="text-grey-light"
+                >
+                  <line
+                    x1="4"
+                    y1="4"
+                    x2="44"
+                    y2="44"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  <line
+                    x1="44"
+                    y1="4"
+                    x2="4"
+                    y2="44"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  <rect
+                    x="4"
+                    y="4"
+                    width="40"
+                    height="40"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </div>
             </div>
 
             <h3 className="font-syne font-bold text-lg text-dark mb-3">

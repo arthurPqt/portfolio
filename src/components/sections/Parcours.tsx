@@ -67,31 +67,30 @@ export default function Parcours() {
                   {exp.year}
                 </span>
                 {index !== experiences.length - 1 && (
-                  <div className="w-0.5 h-full bg-accent mt-4" />
+                  <div className="w-0.5 grow bg-accent mt-4" />
                 )}
               </div>
 
-              <div className="pb-8">
-                <div className="border-l-4 border-accent pl-4">
-                  <h3 className="font-syne font-semibold text-lg text-dark">
-                    {exp.title}
-                  </h3>
-                  <p className="font-dm text-sm text-grey mt-1">{exp.company}</p>
-                  <p className="font-dm text-sm text-grey leading-relaxed mt-3">
-                    {exp.description}
-                  </p>
+              <div className="bg-grey-border/30 rounded-lg p-6 flex-1">
+                <h3 className="font-syne font-semibold text-lg text-dark">
+                  {exp.title}
+                </h3>
+                <p className="font-dm text-sm text-grey mt-1">{exp.company}</p>
 
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {exp.skills.map((skill) => (
-                      <span
-                        key={skill}
-                        className="font-mono text-xs bg-grey-border/50 text-grey px-3 py-1 rounded"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {exp.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="font-mono text-xs bg-accent-light text-accent-text px-3 py-1 rounded"
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
+
+                <p className="font-dm text-sm text-grey leading-relaxed mt-4">
+                  {exp.description}
+                </p>
               </div>
             </div>
           ))}
