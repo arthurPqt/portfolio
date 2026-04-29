@@ -6,7 +6,6 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 sm:px-12 md:px-16 lg:px-24 pt-20 text-center">
-
       {/* Badge disponible */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -15,7 +14,7 @@ export default function Hero() {
         className="flex items-center justify-center gap-2 mb-6"
       >
         <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-        <span className="font-mono text-xs tracking-widest text-accent uppercase">
+        <span className="font-mono text-s tracking-widest text-accent uppercase">
           Disponible
         </span>
       </motion.div>
@@ -73,21 +72,6 @@ export default function Hero() {
           Mon CV ↓
         </a>
       </motion.div>
-
-      {/* Stack */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
-        className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-16 pt-8 border-t border-grey-border"
-      >
-        {["Next.js", "React", "Tailwind CSS", "PHP", "MySQL", "TypeScript"].map((tech) => (
-          <span key={tech} className="font-mono text-xs text-grey-light">
-            {tech}
-          </span>
-        ))}
-      </motion.div>
-
     </section>
   );
 }
