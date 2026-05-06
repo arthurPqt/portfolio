@@ -1,25 +1,37 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { IconType } from "react-icons";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiPhp,
+  SiMysql,
+  SiDirectus,
+  SiGit,
+  SiFigma,
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 interface Technology {
   name: string;
-  icon: string;
+  icon: IconType;
   category: "frontend" | "backend" | "tools";
 }
 
 const technologies: Technology[] = [
-  { name: "Next.js", icon: "▲", category: "frontend" },
-  { name: "React", icon: "⚛", category: "frontend" },
-  { name: "Tailwind", icon: "🎨", category: "frontend" },
+  { name: "Next.js", icon: SiNextdotjs, category: "frontend" },
+  { name: "React", icon: SiReact, category: "frontend" },
+  { name: "Tailwind", icon: SiTailwindcss, category: "frontend" },
 
-  { name: "PHP", icon: "🐘", category: "backend" },
-  { name: "MySQL", icon: "🗄", category: "backend" },
-  { name: "Directus", icon: "📊", category: "backend" },
+  { name: "PHP", icon: SiPhp, category: "backend" },
+  { name: "MySQL", icon: SiMysql, category: "backend" },
+  { name: "Directus", icon: SiDirectus, category: "backend" },
 
-  { name: "Git", icon: "🔀", category: "tools" },
-  { name: "VS Code", icon: "💻", category: "tools" },
-  { name: "Figma", icon: "✏️", category: "tools" },
+  { name: "Git", icon: SiGit, category: "tools" },
+  { name: "VS Code", icon: VscVscode, category: "tools" },
+  { name: "Figma", icon: SiFigma, category: "tools" },
 ];
 
 const categoryLabels: Record<string, string> = {
@@ -73,7 +85,7 @@ export default function Stack() {
             <div className="flex justify-center gap-8">
               {items.map((tech) => (
                 <div key={tech.name} className="flex flex-col items-center gap-2">
-                  <span className="text-3xl">{tech.icon}</span>
+                  <tech.icon className="text-3xl text-dark" />
                   <span className="font-dm text-sm text-grey">{tech.name}</span>
                 </div>
               ))}
