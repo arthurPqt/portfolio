@@ -31,8 +31,8 @@ const experiences: ExperienceItem[] = [
 
 export default function Parcours() {
   return (
-    <section id="about" className="py-24 px-6 sm:px-12 md:px-16 lg:px-24">
-      <div className="max-w-4xl mx-auto">
+    <section id="about" className="py-24 px-6  sm:px-12 md:px-16 lg:px-24">
+      <div className="max-w-4xl gap-6 mx-auto">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,8 +70,9 @@ export default function Parcours() {
                   <div className="w-0.5 grow bg-accent mt-4" />
                 )}
               </div>
-
-              <div className="bg-grey-border/30 rounded-lg p-6 flex-1">
+               
+                    
+              <div className="bg-grey-border/30 rounded-lg p-6  flex-col flex">
                 <h3 className="font-syne font-semibold text-lg text-dark">
                   {exp.title}
                 </h3>
@@ -92,7 +93,8 @@ export default function Parcours() {
                   {exp.description}
                 </p>
               </div>
-            </div>
+              </div>
+            
           ))}
         </motion.div>
 

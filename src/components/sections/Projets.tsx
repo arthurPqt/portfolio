@@ -6,7 +6,7 @@ import { projects } from "@/data/projects";
 
 export default function Projets() {
   return (
-    <section id="projects" className="py-24 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section id="projects" className="py-24 px-6 flex flex-col justify-center sm:px-12 md:px-16 lg:px-24">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -32,12 +32,12 @@ export default function Projets() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl flex justify-center mx-auto"
       >
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-grey-border/30 rounded-lg p-6 flex flex-col"
+            className="bg-grey-border/30 rounded-lg p-6 flex flex-col justify-content-center"
           >
             <div className="bg-grey-border/50 h-32 rounded-md mb-6 flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">

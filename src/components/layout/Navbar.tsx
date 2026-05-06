@@ -32,14 +32,16 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* Logo */}
+        <div>
         <Link
           href="/"
           className="font-syne font-extrabold text-xl text-dark tracking-tight hover:text-accent transition-colors"
         >
           AP
-        </Link>
+        </Link></div>
 
         {/* Desktop links */}
+         <div>
         <div className="hidden md:flex items-center justify-end gap-8">
           {navLinks.map((link) => (
             <Link
@@ -58,7 +60,7 @@ export default function Navbar() {
           >
             Mon CV
           </a>
-        </div>
+        </div></div>
 
         {/* Mobile burger */}
         <button

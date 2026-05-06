@@ -36,7 +36,7 @@ export default function Stack() {
   };
 
   return (
-    <section id="stack" className="py-24 px-6 sm:px-12 md:px-16 lg:px-24">
+    <section id="stack" className="py-24 flex justify-center px-6 sm:px-12 md:px-16 lg:px-24">
       <div className="max-w-6xl mx-auto">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
