@@ -1,19 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GitFork, Link2, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const socialLinks = [
   {
     label: "GitHub",
     href: "https://github.com/arthurPqt",
-    icon: GitFork,
+    icon: SiGithub,
     external: true,
   },
   {
     label: "LinkedIn",
     href: "https://linkedin.com/in/arthurpicquot",
-    icon: Link2,
+    icon: FaLinkedinIn,
     external: true,
   },
   {

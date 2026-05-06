@@ -1,6 +1,8 @@
 "use client";
 
-import { GitFork, Link2, ArrowUp } from "lucide-react";
+import { ArrowUp } from "lucide-react";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -25,7 +27,7 @@ export default function Footer() {
               className="text-grey-light hover:text-white transition-colors"
               aria-label="GitHub"
             >
-              <GitFork size={20} />
+              <SiGithub size={20} />
             </a>
             <a
               href="https://linkedin.com/in/arthurpicquot"
@@ -34,7 +36,7 @@ export default function Footer() {
               className="text-grey-light hover:text-white transition-colors"
               aria-label="LinkedIn"
             >
-              <Link2 size={20} />
+              <FaLinkedinIn size={20} />
             </a>
           </div>
 
